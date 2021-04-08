@@ -3,16 +3,16 @@ from json import loads
 import mysql.connector
 
 mydb = mysql.connector.connect(
-  host="database-1.clyq2yvs4ymv.ap-northeast-2.rds.amazonaws.com",
-  user="admin",
-  passwd="kafkatest1234",
-  database="testdb"
+  host="",
+  user="",
+  passwd="",
+  database=""
 )
 
 consumer = KafkaConsumer(
     'test_topic',
      security_protocol="SSL",
-     bootstrap_servers='b-4.demo-cluster-yh.kpkjyg.c4.kafka.ap-northeast-2.amazonaws.com:9094,b-3.demo-cluster-yh.kpkjyg.c4.kafka.ap-northeast-2.amazonaws.com:9094,b-2.demo-cluster-yh.kpkjyg.c4.kafka.ap-northeast-2.amazonaws.com:9094',
+     bootstrap_servers='',
      auto_offset_reset='earliest',
      enable_auto_commit=True,
      group_id='db-test-group',

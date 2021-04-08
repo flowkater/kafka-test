@@ -3,7 +3,7 @@ from json import dumps
 from kafka import KafkaProducer
 
 size = 1000000
-producer = KafkaProducer(security_protocol="SSL", bootstrap_servers="b-4.demo-cluster-yh.kpkjyg.c4.kafka.ap-northeast-2.amazonaws.com:9094,b-3.demo-cluster-yh.kpkjyg.c4.kafka.ap-northeast-2.amazonaws.com:9094,b-2.demo-cluster-yh.kpkjyg.c4.kafka.ap-northeast-2.amazonaws.com:9094")
+producer = KafkaProducer(security_protocol="SSL", bootstrap_servers="l")
     
 def success(metadata):
     print(metadata)
